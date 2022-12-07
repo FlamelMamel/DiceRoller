@@ -22,11 +22,10 @@ class MainActivity : AppCompatActivity() {
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
     }
+}
+class Dice(val numSides: Int) {
 
-    class Dice(val numSides: Int) {
-
-        fun roll(): Int {
-            return (1..numSides).random()
-        }
+    fun roll(): Int {
+        return (1..numSides).random()
     }
 }
